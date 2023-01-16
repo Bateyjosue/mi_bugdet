@@ -52,3 +52,30 @@ Processing by SplanshController#index as HTML
 Completed 200 OK in 564ms (Views: 506.1ms | Allocations: 89966)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:09:31 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3815)
+Completed 200 OK in 10ms (Views: 9.4ms | Allocations: 4643)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:15:40 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5715)
+Completed 200 OK in 35ms (Views: 33.4ms | Allocations: 6540)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:18:32 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 362)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3253)
+Completed 200 OK in 16ms (Views: 13.2ms | Allocations: 4078)
+
+
