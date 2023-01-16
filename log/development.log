@@ -79,3 +79,331 @@ Processing by SplanshController#index as HTML
 Completed 200 OK in 16ms (Views: 13.2ms | Allocations: 4078)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:24:06 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 61.7ms | Allocations: 10596)
+Completed 500 Internal Server Error in 64ms (Allocations: 11425)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `hotwire_livereload_tags' for #<ActionView::Base:0x00000000015428>
+
+    '.freeze;@output_buffer.append=( hotwire_livereload_tags if Rails.env.development? );@output_buffer.safe_append='
+                                     ^^^^^^^^^^^^^^^^^^^^^^^):
+    12: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    13: <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    14: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    15:     <%= hotwire_livereload_tags if Rails.env.development? %>
+    16:   </head>
+    17: 
+    18:   <body>
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:24:52 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1169)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 837)
+  Rendered layout layouts/application.html.erb (Duration: 362.3ms | Allocations: 101837)
+Completed 200 OK in 413ms (Views: 366.1ms | ActiveRecord: 0.0ms | Allocations: 105566)
+
+
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:24:55 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:24:55 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:25:20 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 192)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.0ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 6210)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 6539)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:25:21 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5917)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 6181)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:25:22 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 157)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 4.8ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 3427)
+Completed 200 OK in 18ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3695)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:25:22 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:25:25 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:25:25 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:00 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.2ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5940)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 6208)
+
+
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:03 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 0.7ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5911)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6175)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:08 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 3436)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 3698)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:08 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:11 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:11 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:17 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.3ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 5957)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 6223)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:17 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.4ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3442)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3709)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:18 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:20 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:20 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:27 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5925)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 6189)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:28 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.9ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3430)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3692)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:28 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:31 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:31 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:33 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.1ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 5928)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 6193)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:33 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.3ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3449)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3713)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:34 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:36 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:36 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:39 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.6ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 5927)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 6192)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:39 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3468)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3730)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:40 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:42 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:42 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:44 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.8ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5920)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 6185)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:45 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.6ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 3437)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 3701)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:45 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:47 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:47 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:51 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.0ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5935)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6200)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:26:51 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.5ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3430)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3693)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:52 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:26:54 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:26:54 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
+[ActionCable] Broadcasting to hotwire-reload: {:changed=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], :force_reload=>false}
+Hotwire::Livereload::ReloadChannel transmitting {"changed"=>["/home/jb-dev/Documents/Microverse/RoR/mi_bugdet/app/assets/stylesheets/index.css"], "force_reload"=>false} (via streamed from hotwire-reload)
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:27:01 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 1.4ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5950)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 6215)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-16 15:27:02 +0200
+Processing by SplanshController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering splansh/index.html.erb within layouts/application
+  Rendered splansh/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 155)
+  Rendered /home/jb-dev/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/hotwire-livereload-1.2.3/app/views/hotwire/livereload/_head_action_cable.html.erb (Duration: 2.4ms | Allocations: 714)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3453)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3717)
+
+
+Finished "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:27:02 +0200
+Hotwire::Livereload::ReloadChannel stopped streaming from hotwire-reload
+Started GET "/cable" for 127.0.0.1 at 2023-01-16 15:27:05 +0200
+Started GET "/cable" [WebSocket] for 127.0.0.1 at 2023-01-16 15:27:05 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Hotwire::Livereload::ReloadChannel is transmitting the subscription confirmation
+Hotwire::Livereload::ReloadChannel is streaming from hotwire-reload
