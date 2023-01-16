@@ -97,12 +97,9 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 
-- A login page.
-- A registration page.
-- A food list (with all CRUD implementation, except for 'update').
-- A recipes list (with all CRUD implementation, except for 'update').
-- A general shopping list view (all missing food for all your recipes and total price).
-- A list of all public recipes from other users with their names and total prices.
+- register and log in, so that the data is private to them.
+- introduce new transactions associated with a category.
+- see the money spent on each category.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,9 +136,9 @@ Clone this repository to your desired folder:
 
 
 ```
-  git clone https://github.com/Bateyjosue/rails_recipes.git
+  git clone https://github.com/Bateyjosue/mi_bugdet.git
   
-  cd rails_recipes
+  cd mi_bugdet
   
 ```
 
@@ -191,7 +188,7 @@ Example:
 ```sh
 
 ```
- --> -->
+ --> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,9 +214,12 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] A login page.
-- [ ] A registration page.
-- [ ] A food list (with all CRUD implementation, except for 'update').
+- [ ] Splash screen.
+- [ ] Sign up and log in pages
+- [ ] Home page (catagories page)
+- [ ] Transactions page
+- [ ] "Add a new category" page
+- [ ] "Add a new transaction" page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -250,6 +250,7 @@ If you like this project Please give it ⭐️
 I would like to thank...
 
 - Thanks to [Microverse](https://www.microverse.org/) for giving this opportunity to learn ...
+- Thanks to [Gregoire Vella](https://www.behance.net/gregoirevella). for the design
 - Code Reviewers & Coding Partners.
 - Hat tip to anyone whose code was used.
 - Inspiration.
@@ -277,7 +278,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
