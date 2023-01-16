@@ -2,10 +2,10 @@
 <section class="splash-container">
   <h1 class="splash-container__title">
     <span class="material-symbols-outlined">paid</span>
-    mi budget
+    <span>    mi budget    </span>
   </h1>
-  <div class="splash-container__action">
-    <%= link_to "LOG IN" %>
-    <%= link_to "SIGN UP" %>
+  <div class="splash-container__actions">
+    <%= link_to "LOG IN", new_user_session_path %>
+    <%= link_to "SIGN UP", new_user_registration_path %>
   </div>
 </section>

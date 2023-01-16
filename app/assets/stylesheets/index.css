@@ -1,6 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --bg-color: #3778c2;
+  --bg-color-secondary: #5fb523;
+  --font-color: #434b54;
+}
+
+body {
+  background: rgba(189, 189, 189, 0.24);
+  color: var( --font-color)
+}
+
+a {
+  text-decoration: none;
+}
+
+.splash-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  padding-top: 10rem;
+  height:100%;
+
+}
+
+.splash-container .splash-container__title {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-family: 'Mirza', cursive;
+}
+
+.splash-container__actions {
+  width: 100%;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 75%;
+  gap: 2rem;
+}
+.splash-container__actions a:nth-child(1) {
+  background: var(--bg-color);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: .8rem 1rem;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+.splash-container__actions a:nth-child(2) {
+  color: var(--font-color);
+  font-weight: bold;
+  letter-spacing: .05em;
 }
