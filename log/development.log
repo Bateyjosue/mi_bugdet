@@ -1,0 +1,2 @@
+  [1m[35m (5567.9ms)[0m  [1m[35mCREATE DATABASE "mi_bugdet_development" ENCODING = 'unicode'[0m
+  [1m[35m (247.0ms)[0m  [1m[35mCREATE DATABASE "mi_bugdet_test" ENCODING = 'unicode'[0m
