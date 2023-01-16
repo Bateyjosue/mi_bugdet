@@ -1,0 +1,2 @@
+module SplanshHelper
+end
