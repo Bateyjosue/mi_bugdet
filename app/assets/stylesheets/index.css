@@ -204,17 +204,17 @@ em {
   justify-content: space-between;
   width: 100%;
   background: #fff;
-  height: 60px;
-  padding-right:1rem;
-  margin-bottom: .5rem;
+  height: 80;
+  padding:.6rem;
+  margin: .5rem;
 }
 
 .category-image img {
-  width: 120px;
-  height:100%;
+  width: 60px;
+  height:60px;
 }
 
-.category h3 {
+.category h3, .category p {
   font-size: .8rem;
   color: var(--font-color);
 }
@@ -270,4 +270,13 @@ em {
   border: none;
   font-weight: bold;
   letter-spacing: .05em;
+}
+
+.back {
+  background: var(--bg-color);
+  padding: .5rem 1rem;
+}
+
+.back a{
+  color: white;
 }
