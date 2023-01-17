@@ -1,0 +1,13 @@
+<section class="categories-container">
+  <% if @categories %>
+    <%@categories.each do |category| %>
+      <%= category.name %>
+      <%= category.description %>
+      <%= category.user.name %>
+    <% end %>
+    
+  <% else %>
+    No categoryFound at the Moment
+  <%end %>
+  <%= link_to "Add a new Category", new_category_path, class: "categories-container__add__btn" %>
+</section>
