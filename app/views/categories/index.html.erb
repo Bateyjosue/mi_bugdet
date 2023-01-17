@@ -1,13 +1,25 @@
 <section class="categories-container">
+<h4 class="categories-container__title">Categories</h4>
   <% if @categories %>
     <%@categories.each do |category| %>
-      <%= category.name %>
-      <%= category.description %>
-      <%= category.user.name %>
+      <article class="category">
+        <div class="category-image">
+          <img src=<%= category.image %> alt="">
+        </div>
+        <div class="category-name">
+          <h3><%= category.name %></h3>
+        </div>
+        <div class="category-total">
+          <p>$10</p>
+        </div>
+      </article>
+
     <% end %>
     
   <% else %>
     No categoryFound at the Moment
   <%end %>
-  <%= link_to "Add a new Category", new_category_path, class: "categories-container__add__btn" %>
+  <div class="action">
+    <%= link_to "Add a new Category", new_category_path, class: "categories-container__add__btn" %>
+  </div>
 </section>
