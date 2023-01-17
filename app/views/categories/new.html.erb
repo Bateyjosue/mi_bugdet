@@ -1,0 +1,12 @@
+<section class="categories-container__new">
+  <h4 class="categories-container__new__title">New Category</h4>
+  <%= form_with model: @category, local: true, method: :post, url: categories_path do |f| %>
+    <%= f.text_field :name, placeholder: 'Category Name' %>
+    <%= f.text_field :description, placeholder: 'Category Description' %>
+    <%= f.text_field :image, placeholder: 'Category Link Image' %>
+    <div class="action">
+      <%= f.submit "Add Category" %>
+    </div>
+  <% end %>
+  
+</section>
