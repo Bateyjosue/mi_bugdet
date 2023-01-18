@@ -7,7 +7,10 @@ class Category < ApplicationRecord
   validates :user_id, presence: true
   validates :image, presence: true
 
-  def total_pric
-    
+  def total_pric category_id
+    category = Category.includes(:transactions).find(category_id)
+    total = category.transactions.sum(:price)
+
+    total
   end
 end
