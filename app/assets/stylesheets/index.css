@@ -20,6 +20,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--font-color)
 }
 
 header {
@@ -203,10 +204,10 @@ em {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: #fff;
-  height: 80;
-  padding:.6rem;
+  background: rgb(255, 255, 255);
+  height: 80px;
   margin: .5rem;
+  padding: .5rem
 }
 
 .category-image img {
@@ -217,6 +218,13 @@ em {
 .category h3, .category p {
   font-size: .8rem;
   color: var(--font-color);
+}
+
+.category-name {
+  flex: 2;
+}
+.category-name h3{
+  padding-left: 1rem;
 }
 
 .category-name ,
@@ -253,7 +261,9 @@ em {
   padding-top: 1rem;
 }
 
-.categories-container__new form input[type="text"]{
+.categories-container__new form input[type="text"],
+.categories-container__new form input[type="number"],
+  .categories-container__new form textarea{
   height: 2.5rem;
   padding: .5rem 0rem;
   border-top: 0rem;
@@ -279,4 +289,13 @@ em {
 
 .back a{
   color: white;
+}
+
+.total-amount{
+  background: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: .6rem 1rem;
+
 }
