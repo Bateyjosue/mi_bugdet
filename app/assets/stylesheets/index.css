@@ -34,29 +34,63 @@ header h1 {
   font-size: 1.2rem;
 }
 
-nav {
+.popup-menu {
   position: fixed;
   width: 100%;
   height: 100%;
   background: var(--bg-color-secondary);
   flex-direction: column;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 1;
   gap: 2rem;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
-nav a {
+nav {
+  display: none;
+}
+
+.popup-menu .close {
+  color: var(--font-color);
+  position: inherit;
+  top: 1rem;
+  right: 1rem
+}
+
+.popup-menu a {
   color: white
 }
 
-nav a:hover, a:focus {
+.popup-menu a:hover, a:focus {
   color: white;
   background: var(--font-color);
 }
 
+.profiles {
+  justify-self: flex-start;
+  position:absolute;
+  top: 2rem;
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profiles span:nth-child(1) {
+  font-size: 5rem;
+  color: var(--bg-color);
+}
+
+.profiles span:nth-child(1) {
+  font-size: 5rem;
+  color: var(--bg-color);
+}
 .menu {
   padding: 1rem 1rem;
 

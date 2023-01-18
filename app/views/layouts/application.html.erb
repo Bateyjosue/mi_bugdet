@@ -26,11 +26,23 @@
           <%= link_to "Log out", categories_path %>
           <%= link_to "Profile", categories_path %>
         </nav>
-        <div class="menu">
+        <div class="menu" id="menu-open">
           <span class="material-symbols-outlined">menu_open</span>
         </div>
         <div class="menu">
           <span class="material-symbols-outlined">search</span>
+        </div>
+
+        <div class="popup-menu">
+          <div class="close">
+            <span class="material-symbols-outlined">close</span>
+          </div>
+          <div class="profiles">
+            <span class="material-symbols-outlined">account_circle</span>
+            <span><%= current_user.name if user_signed_in? %></span>
+          </div>
+          <%= link_to "Categories", categories_path %>
+          <%= link_to "Log out", categories_path %>
         </div>
       </header>
       <% else %>
@@ -41,5 +53,20 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <%= javascript_tag do %>
+      let closeButton = document.querySelector('.close');
+      let menuPopup = document.querySelector('.popup-menu');
+      let menuOpen = document.querySelector('#menu-open');
+
+      closeButton.addEventListener('click', (e)=>{
+        menuPopup.style.display = 'none';
+      })
+
+      menuOpen.addEventListener('click', (e)=>{
+        menuPopup.style.display = 'flex';
+        console.log(e.target)
+      })
+
+    <% end %>
   </body>
 </html>
