@@ -1,0 +1,20 @@
+  <div class="back">
+    <%= link_to "arrow_back", category_transactions_path, class: "material-symbols-outlined" %>
+  </div>
+<section class="categories-container__new">
+  <h4 class="categories-container__new__title">New Transaction</h4>
+
+  <%= form_with model: @transaction, local: true, method: :post, url: category_transactions_path do |f| %>
+    <%= f.text_field :name, placeholder: "Enter Name" %>
+
+    <%= f.number_field :price, placeholder: "Enter Price" %>
+
+    <%= f.text_field :image, placeholder: "Enter the image link" %>
+    <%= f.text_area  :description, size: '10x10',placeholder: "Enter Description" %>
+
+    <div class="action">
+      <%= f.submit "Add Transaction" %>
+    </div>
+
+  <% end %>
+</section>
