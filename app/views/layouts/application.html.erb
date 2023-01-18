@@ -42,7 +42,8 @@
             <span><%= current_user.name if user_signed_in? %></span>
           </div>
           <%= link_to "Categories", categories_path %>
-          <%= link_to "Log out", categories_path %>
+      <%= link_to "Log Out", destroy_user_session_path, 'data-turbo-method': :delete %>
+
         </div>
       </header>
       <% else %>
@@ -50,13 +51,29 @@
     <% end %>
     
     
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if notice  %>
+      <div class="popup-notication">
+        <div class="popup-content-notice">
+          <span class="material-symbols-outlined">task_alt</span>
+          <p class="notice"><%= notice %></p>
+        </div> 
+      </div>
+      
+    <% elsif alert %>
+      <div class="popup-notication">
+        <div class="popup-content-alert">
+          <span class="material-symbols-outlined">info</span>
+          <p class="alert"><%= alert %></p>
+        </div>         
+      </div>
+    <% end %>
     <%= yield %>
     <%= javascript_tag do %>
       let closeButton = document.querySelector('.close');
       let menuPopup = document.querySelector('.popup-menu');
       let menuOpen = document.querySelector('#menu-open');
+      let notication = document.querySelector('.popup-notication');
+      let signout = document.querySelector('.signout');
 
       closeButton.addEventListener('click', (e)=>{
         menuPopup.style.display = 'none';
@@ -64,8 +81,16 @@
 
       menuOpen.addEventListener('click', (e)=>{
         menuPopup.style.display = 'flex';
-        console.log(e.target)
       })
+
+      setTimeout(() => {
+        notication.style.display = 'none';
+        console.log('Desappered')
+      }, 3000);
+
+      signout.addEventListener('click', () => {
+        window.location.reload();
+      });
 
     <% end %>
   </body>

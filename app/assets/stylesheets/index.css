@@ -42,10 +42,52 @@ header h1 {
   flex-direction: column;
   display: none;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   z-index: 1;
   gap: 2rem;
+  padding-left: 3rem;
   /* visibility: hidden; */
+}
+
+.popup-notication {
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.popup-notication div {
+  background: rgb(255, 255, 255);
+  color: var(--font-color);
+  width: 70%;
+  height: 35%;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: rgba(76, 76, 76, 0.387) solid 1px;
+}
+
+.popup-notication p {
+  color: var(--font-color);
+  text-align: center;
+}
+
+.popup-content-notice span {
+  font-size: 4rem;
+  color: var(--bg-color-secondary);
+}
+
+.popup-content-alert span {
+  font-size: 4rem;
+  color: var(--bg-color);
 }
 
 nav {
@@ -70,16 +112,37 @@ nav {
 
 .profiles {
   justify-self: flex-start;
+  align-self: center;
   position:absolute;
-  top: 2rem;
-}
-
-.profiles {
+  top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  margin-left: -3rem;
+}
+
+
+#menu-open:active {
+  cursor: pointer;
+  animation: appear 400ms ease-in-out;
+  position: relative;
+}
+
+@keyframes appear {
+  0% {
+    transform: translate(0);
+  }
+
+  200% {
+    transform: translate(95%);
+    
+  }
+}
+
+#menu-open.ative {
+  transition: all 400ms cubic-bezier(0.7)
 }
 
 .profiles span:nth-child(1) {
