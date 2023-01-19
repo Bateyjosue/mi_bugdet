@@ -72,8 +72,8 @@
       let closeButton = document.querySelector('.close');
       let menuPopup = document.querySelector('.popup-menu');
       let menuOpen = document.querySelector('#menu-open');
+
       let notication = document.querySelector('.popup-notication');
-      let signout = document.querySelector('.signout');
 
       closeButton.addEventListener('click', (e)=>{
         menuPopup.style.display = 'none';
@@ -84,13 +84,8 @@
       })
 
       setTimeout(() => {
-        notication.style.display = 'none';
-        console.log('Desappered')
+        notication.classList.add('hide')
       }, 3000);
-
-      signout.addEventListener('click', () => {
-        window.location.reload();
-      });
 
     <% end %>
   </body>

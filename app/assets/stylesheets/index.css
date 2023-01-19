@@ -392,3 +392,7 @@ em {
   justify-content: space-between;
   padding: 0.6rem 1rem;
 }
+
+.hide {
+  display: none;
+}
