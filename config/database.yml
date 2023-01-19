@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: mi_bugdet_production
-  username: mi_bugdet
-  password: <%= ENV["MI_BUGDET_DATABASE_PASSWORD"] %>
+  url: <%= ENV[['DATABASE_URL'] %>
