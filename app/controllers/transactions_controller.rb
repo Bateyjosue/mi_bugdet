@@ -20,6 +20,7 @@ class TransactionsController < ApplicationController
   end
 
   private
+
   def transaction_params
     params.require(:transaction).permit(:name, :description, :image, :price)
   end

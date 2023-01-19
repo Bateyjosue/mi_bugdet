@@ -1,10 +1,21 @@
 require 'rails_helper'
 
-RSpec.feature "Transactions", type: :feature do
+RSpec.feature 'Transactions', type: :feature do
   before :each do
     @user = FactoryBot.create :user
-    @category = Category.create(user: @user,name: 'Dinner', image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1', description: 'Foods list 1')
-    @transaction = Transaction.create(category: @category, name: 'pasta burito', price: 11, description: 'food dinner 1', image:'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1' )
+    @category = Category.create(
+      user: @user, name: 'Dinner',
+      image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1',
+      description: 'Foods list 1'
+    )
+
+    @transaction = Transaction.create(
+      category: @category,
+      name: 'pasta burito',
+      price: 11,
+      description: 'food dinner 1',
+      image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1'
+    )
 
     visit new_user_session_path
     fill_in 'Email', with: @user.email

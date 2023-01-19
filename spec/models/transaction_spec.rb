@@ -3,8 +3,9 @@ require 'rails_helper'
 RSpec.describe Transaction, type: :model do
   before :each do
     @user = FactoryBot.create :user
-    @category = Category.create(user: @user,name: 'Dinner', image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1')
-    @transaction = Transaction.create(category: @category, name: 'Netflix', price: 11, description: 'food dinner 1', image:'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1' )
+    @category = Category.create(user: @user, name: 'Dinner', image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1')
+    @transaction = Transaction.create(category: @category, name: 'Netflix', price: 11, description: 'food dinner 1',
+                                      image: 'https://www.eatthis.com/wp-content/uploads/sites/4/2017/12/waffle-honey-yogurt-bananas-flickr.jpg?quality=82&strip=1')
   end
 
   it 'should valid with valid attributes' do
