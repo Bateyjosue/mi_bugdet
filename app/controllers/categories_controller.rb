@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :authenticate_user!
   def index
-    @categories = Category.all
+    @categories = Category.where(user: current_user)
   end
 
   def show; end
