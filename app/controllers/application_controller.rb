@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+include UserUrlHelper
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
@@ -11,7 +12,7 @@ class ApplicationController < ActionController::Base
     categories_path
   end
 
-  def after_sign_up_path_for(_resource)
+  def after_sign_up_path_for
     new_user_session_path
   end
 

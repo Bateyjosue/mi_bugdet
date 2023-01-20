@@ -159,11 +159,6 @@ nav {
   color: var(--bg-color);
 }
 
-.profiles span:nth-child(2) {
-  font-size: 5rem;
-  color: var(--bg-color);
-}
-
 .menu {
   padding: 1rem 1rem;
 }
@@ -395,4 +390,9 @@ em {
 
 .hide {
   display: none;
+}
+
+
+.profile-name {
+  font-size: .8rem;
 }
