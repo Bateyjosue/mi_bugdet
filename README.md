@@ -107,7 +107,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://mi-budget.onrender.com/)
+- [Video Demo Link](https://www.loom.com/share/32c525ceca1b444c9bfffd8558b81c30)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
