@@ -335,6 +335,7 @@ em {
   margin: 0 auto;
   color: white;
   font-weight: 300;
+  width: 80%;
 }
 
 .categories-container .action {
@@ -386,6 +387,10 @@ em {
   display: flex;
   justify-content: space-between;
   padding: 0.6rem 1rem;
+}
+
+.show {
+  display: flex;
 }
 
 .hide {

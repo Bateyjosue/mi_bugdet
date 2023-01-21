@@ -29,7 +29,7 @@
           <span class="material-symbols-outlined">menu_open</span>
         </div>
         <div class="menu">
-          <span class="material-symbols-outlined">search</span>
+          <span class="material-symbols-outlined">home</span>
         </div>
 
         <div class="popup-menu">
@@ -41,51 +41,46 @@
             <span class="profile-name"><%= current_user.name if user_signed_in? %></span>
           </div>
           <%= link_to "Categories", categories_path %>
-      <%= link_to "Log Out", destroy_user_session_path, 'data-turbo-method': :delete %>
-
+          <%= link_to "Log Out", destroy_user_session_path, 'data-turbo-method': :delete %>
         </div>
+
       </header>
-      <% else %>
-      <%= link_to "Out", destroy_user_session_path, 'data-turbo-method': :delete %>
-    <% end %>
-    
-    
-    <% if notice  %>
+        <% else %>
+          <%= link_to "Out", destroy_user_session_path, 'data-turbo-method': :delete %>
+        <% end %>
       <div class="popup-notication">
-        <div class="popup-content-notice">
-          <span class="material-symbols-outlined">task_alt</span>
-          <p class="notice"><%= notice %></p>
-        </div> 
+        <% if notice  %>
+          <div class="popup-content-notice">
+            <span class="material-symbols-outlined">task_alt</span>
+            <p class="notice"><%= notice %></p>
+          </div> 
+        <% elsif alert %>
+          <div class="popup-content-alert">
+            <span class="material-symbols-outlined">info</span>
+            <p class="alert"><%= alert %></p>
+          </div>  
+        <% end %>
       </div>
-      
-    <% elsif alert %>
-      <div class="popup-notication">
-        <div class="popup-content-alert">
-          <span class="material-symbols-outlined">info</span>
-          <p class="alert"><%= alert %></p>
-        </div>         
-      </div>
-    <% end %>
     <%= yield %>
     <%= javascript_tag do %>
       let closeButton = document.querySelector('.close');
       let menuPopup = document.querySelector('.popup-menu');
-      let menuOpen = document.querySelector('#menu-open');
+      let menuOpen = document.querySelector('#menu-open.menu');
 
       let notication = document.querySelector('.popup-notication');
 
       closeButton.addEventListener('click', (e)=>{
-        menuPopup.style.display = 'none';
+          menuPopup.classList.add('hide')
       })
 
       menuOpen.addEventListener('click', (e)=>{
-        menuPopup.style.display = 'flex';
+        menuPopup.classList.add('show')
       })
 
       setTimeout(() => {
         notication.classList.add('hide')
       }, 3000);
 
-    <% end %>
+  <% end %>
   </body>
 </html>
